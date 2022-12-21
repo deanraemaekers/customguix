@@ -35,7 +35,7 @@
 "https://nightly.odoo.com/15.0/nightly/tgz/odoo_15.0.latest.tar.gz"
 )) (sha256
         (base32
-         "0yrm86h0njbdikfc7385zxm89vbvqcfzv5mz7mihixqxbdkvlicl"))))
+         "120hm5bls1pd2j23i019z4jznv4kybb96z95c5r7a4yyhanwi02f"))))
     (build-system python-build-system)
     (native-inputs
      `(("python-setuptools" ,python-setuptools)
