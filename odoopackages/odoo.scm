@@ -16,6 +16,7 @@
   #:use-module (gnu packages python-crypto)
   #:use-module (gnu packages xml)
   #:use-module (gnu packages python)
+  #:use-module (gnu packages python-build)
   #:use-module (gnu packages python-xyz)
   #:use-module (guix packages)
   #:use-module (guix search-paths)
@@ -31,15 +32,15 @@
      (origin
        (method url-fetch)
        (uri (string-append
-"https://nightly.odoo.com/15.0/nightly/tgz/odoo_15.0.20220718.tar.gz"
+"https://nightly.odoo.com/15.0/nightly/tgz/odoo_15.0.latest.tar.gz"
 )) (sha256
         (base32
-         "0jk1wkifzl5rw78ii3dpjvp91ayf3417c65121ygccrx86cxxa0b"))))
+         "0yrm86h0njbdikfc7385zxm89vbvqcfzv5mz7mihixqxbdkvlicl"))))
     (build-system python-build-system)
     (native-inputs
      `(("python-setuptools" ,python-setuptools)
        ("python", python-wrapper)
-       ("xlwt", python-xlwt)
+       ;("xlwt", python-xlwt)
        ("xlsxwriter", python-xlsxwriter)
 ("email-validator", python-email-validator)
 ("mock", python-mock)
